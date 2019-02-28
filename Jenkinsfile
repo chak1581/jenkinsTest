@@ -26,7 +26,7 @@ properties([pipelineTriggers([githubPush()])])
 	
 	def foo = ${env.BUILD_NUMBER}
 	
-	sh "aws s3 cp /workspace/jenkinsTest/dist/rectangle-${env.BUILD_NUMBER}.jar s3://cf-templates-ika2ur4lmnvx-us-east-1/"
+	sh "aws s3 cp /workspace/jenkinsTest/dist/rectangle-{env.BUILD_NUMBER}.jar s3://cf-templates-ika2ur4lmnvx-us-east-1/"
 	
 	
 	}
