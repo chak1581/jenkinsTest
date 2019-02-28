@@ -2,7 +2,7 @@ properties([pipelineTriggers([githubPush()])])
 
   node ('linux'){
 
-  stages {    
+    
     stage ("Unit Test") {
 	
        
@@ -22,5 +22,5 @@ properties([pipelineTriggers([githubPush()])])
 	}
 	
 
-  }
+  
 } 	
